@@ -1,0 +1,28 @@
+{
+  "navbar": {
+    "page1": "Seite 1",
+    "page2": "Seite 2",
+    "page3": "Seite 3",
+    "page4": "Seite 4",
+    "aboutUs": "Über uns",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "contact": "Tel: 079 718 5905",
+    "email": "E-Mail: rojesafe@hotmail.com",
+    "followUs": "Folge uns",
+    "rightsReserved": "© {{year}} RojeSafe. Alle Rechte vorbehalten."
+  },
+  "page1": {
+    "title": "Seite 1"
+  },
+  "page2": {
+    "title": "Seite 2"
+  },
+  "page3": {
+    "title": "Seite 3"
+  },
+    "aboutUs": {
+    "title": "Über uns"
+  }
+}
