@@ -14,6 +14,8 @@ import Typography from '@mui/material/Typography';
 import { useTranslation } from 'react-i18next';
 import Switch from '@mui/material/Switch';
 
+import logo from '../assets/logo_rojesafe.png';
+
 const StyledToolbar = styled(Toolbar)(() => ({
   display: 'flex',
   alignItems: 'center',
@@ -61,7 +63,7 @@ export default function AppAppBar() {
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             <Box
               component="img"
-              src="/favicon.ico"
+              src={logo}
               alt="RojeSafe Logo"
               sx={{ width: 28, height: 28 }}
             />
