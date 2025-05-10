@@ -6,9 +6,7 @@ import {
   Stack,
   Typography,
 } from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useTranslation } from 'react-i18next';
 
 import logo from '../assets/contactbanner.webp';
@@ -48,10 +46,10 @@ export default function Footer() {
             }}
           />
 
-          <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 1 }}>
+          <Typography variant="h6" color="text.secondary" sx={{ mt: 1 }}>
             {t('footer.contact')}
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary">
+          <Typography variant="h6" color="text.secondary">
             {t('footer.email')}
           </Typography>
         </Box>
@@ -70,24 +68,6 @@ export default function Footer() {
               sx={{ color: '#E4405F' }}
             >
               <InstagramIcon />
-            </IconButton>
-            <IconButton
-              aria-label="Facebook"
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener"
-              sx={{ color: '#1877F2' }}
-            >
-              <FacebookIcon />
-            </IconButton>
-            <IconButton
-              aria-label="YouTube"
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noopener"
-              sx={{ color: '#FF0000' }}
-            >
-              <YouTubeIcon />
             </IconButton>
           </Stack>
         </Box>

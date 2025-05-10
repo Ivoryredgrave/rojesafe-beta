@@ -1,13 +1,13 @@
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
-import titleImg from '../assets/landingbanner.webp';
+import titleImg from '../assets/landingbanner.jpg';
 
 const StyledBox = styled('div')(({ theme }) => ({
   width: '90%',
   maxWidth: '1400px',
   height: '100vh', 
   marginTop: theme.spacing(8),
-  borderRadius: (theme.vars || theme).shape.borderRadius,
+  borderRadius: '20px',
   outlineColor: 'hsla(220, 25%, 80%, 0.2)',
   border: '1px solid',
   borderColor: (theme.vars || theme).palette.grey[200],

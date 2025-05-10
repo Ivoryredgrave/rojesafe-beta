@@ -13,16 +13,24 @@
     "followUs": "Follow Us",
     "rightsReserved": "© {{year}} RojeSafe. All rights reserved."
   },
-  "page1": {
-    "title": "Page 1"
+   "page1": {
+    "productFeaturesTitle": "Fire Safety Solutions",
+    "productFeaturesDescription": "Explore our advanced fire safety solutions designed to protect lives and property.",
+    "isolationTitle": "Fire Isolation Systems",
+    "isolationDescription": "Our advanced fire safety isolation systems help prevent the spread of fire and smoke, protecting both people and property.",
+    "brandschutzTitle": "Fire Protection Safety",
+    "brandschutzDescription": "We ensure the highest standards in fire protection with innovative products that meet the strictest safety regulations.",
+    "innenausbauTitle": "Custom Interior Construction",
+    "innenausbauDescription": "We provide tailor-made interior solutions that integrate fire safety seamlessly into every design, ensuring both aesthetics and security."
   },
   "page2": {
     "title": "Page 2"
   },
-   "page3": {
+  "page3": {
     "title": "Page 3"
   },
   "aboutUs": {
-    "title": "About Us"
+    "title": "About Us",
+    "description": "RojeSafe was founded with a clear mission: to provide top-tier fire protection solutions with a human touch. Under the leadership of Alejandro Jegher, we combine expertise, innovation, and care to ensure safety in every environment we serve."
   }
 }

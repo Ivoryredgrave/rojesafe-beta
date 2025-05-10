@@ -14,7 +14,14 @@
     "rightsReserved": "© {{year}} RojeSafe. Alle Rechte vorbehalten."
   },
   "page1": {
-    "title": "Seite 1"
+    "productFeaturesTitle": "Brandschutzlösungen",
+    "productFeaturesDescription": "Entdecken Sie unsere fortschrittlichen Brandschutzlösungen, die Leben und Eigentum schützen.",
+    "isolationTitle": "Brandschutz-Isolationssysteme",
+    "isolationDescription": "Unsere fortschrittlichen Brandschutz-Isolationssysteme helfen, die Ausbreitung von Feuer und Rauch zu verhindern und schützen sowohl Menschen als auch Eigentum.",
+    "brandschutzTitle": "Brandschutzsicherheit",
+    "brandschutzDescription": "Wir gewährleisten höchste Standards im Brandschutz mit innovativen Produkten, die den strengsten Sicherheitsvorschriften entsprechen.",
+    "innenausbauTitle": "Maßgeschneiderter Innenausbau",
+    "innenausbauDescription": "Wir bieten maßgeschneiderte Innenlösungen, die Brandschutz nahtlos in jedes Design integrieren und sowohl Ästhetik als auch Sicherheit gewährleisten."
   },
   "page2": {
     "title": "Seite 2"
@@ -22,7 +29,8 @@
   "page3": {
     "title": "Seite 3"
   },
-    "aboutUs": {
-    "title": "Über uns"
+  "aboutUs": {
+    "title": "Über uns",
+    "description": "RojeSafe wurde mit einem klaren Ziel gegründet: erstklassige Brandschutzlösungen mit menschlicher Note bereitzustellen. Unter der Leitung von Alejandro Jegher vereinen wir Fachwissen, Innovation und Sorgfalt, um Sicherheit in jeder Umgebung zu gewährleisten."
   }
 }
