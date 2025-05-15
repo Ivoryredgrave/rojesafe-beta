@@ -35,29 +35,38 @@ const items = [
   },
 ];
 
-function Page1() {
+function Services() {
   const { t } = useTranslation();
   const [selectedItemIndex, setSelectedItemIndex] = React.useState(0);
   const selectedFeature = items[selectedItemIndex];
 
   return (
-    <Container id="page1" sx={{ py: { xs: 8, sm: 16 } }}>
-      <Box sx={{ width: '100%' }}>
-        <Typography
-          component="h2"
-          variant="h4"
-          gutterBottom
-          sx={{ color: 'text.primary' }}
-        >
-          {t('page1.productFeaturesTitle')}
-        </Typography>
-        <Typography
-          variant="body1"
-          sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
-        >
-          {t('page1.productFeaturesDescription')}
-        </Typography>
-      </Box>
+    <Container id="services" sx={{ py: { xs: 8, sm: 16 } }}>
+     <Box
+  sx={{
+    width: '100%',
+    textAlign: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  }}
+>
+  <Typography
+    component="h2"
+    variant="h4"
+    gutterBottom
+    sx={{ color: 'text.primary' }}
+  >
+    {t('page1.productFeaturesTitle')}
+  </Typography>
+  <Typography
+    variant="body1"
+    sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 }, maxWidth: 600 }}
+  >
+    {t('page1.productFeaturesDescription')}
+  </Typography>
+</Box>
+
 
       <Box
         sx={{
@@ -152,4 +161,4 @@ function Page1() {
   );
 }
 
-export default Page1;
+export default Services;

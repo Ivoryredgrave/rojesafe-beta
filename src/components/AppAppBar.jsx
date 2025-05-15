@@ -34,10 +34,8 @@ export default function AppAppBar() {
   };
 
   const navItems = [
-    { label: 'navbar.page1', href: '#page1' },
-    { label: 'navbar.page2', href: '#' },
-    { label: 'navbar.page3', href: '#' },
-    { label: 'navbar.page4', href: '#' },
+    { label: 'navbar.page1', href: '#home' },
+    { label: 'navbar.page2', href: '#services' },
     { label: 'navbar.aboutUs', href: '#aboutus' },
     { label: 'navbar.contact', href: '#footer' },
   ];
@@ -67,7 +65,7 @@ export default function AppAppBar() {
               alt="RojeSafe Logo"
               sx={{ width: 28, height: 28 }}
             />
-            <Typography variant="h6" sx={{ color: '#e64939', fontWeight: 700 }}>
+            <Typography variant="h6" sx={{ color: '#cc0018', fontWeight: 700 }}>
               ROJESAFE
             </Typography>
           </Box>

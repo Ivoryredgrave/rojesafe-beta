@@ -31,10 +31,20 @@ export default function AboutUS() {
         sx={{
           color: 'text.primary',
           textAlign: 'center',
-          mb: 4,
         }}
       >
         {t('aboutUs.title')}
+      </Typography>
+
+      <Typography
+        variant="h6"
+        sx={{
+          color: 'text.secondary',
+          textAlign: 'center',
+          fontStyle: 'italic',
+        }}
+      >
+        {t('aboutUs.subtext')}
       </Typography>
 
       <Box

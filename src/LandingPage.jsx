@@ -1,11 +1,12 @@
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
+
 import AppAppBar from './components/AppAppBar';
+
 import LandingBanner from './components/LandingBanner';
-import Page1 from './components/Page1';
-import Page2 from './components/Page2';
-import Page3 from './components/Page3';
+import Services from './components/Services';
 import AboutUS from './components/AboutUS';
 import Footer from './components/Footer';
+
 import Divider from '@mui/material/Divider';
 
 const theme = createTheme({
@@ -22,11 +23,7 @@ export default function LandingPage() {
       <LandingBanner />
 
       <div>
-        <Page1 />
-        <Divider />
-        <Page2 />
-        <Divider />
-        <Page3 />
+        <Services />
         <Divider />
         <AboutUS />
         <Footer />
