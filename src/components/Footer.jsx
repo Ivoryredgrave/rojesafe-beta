@@ -7,6 +7,7 @@ import {
   Typography,
 } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import { useTranslation } from 'react-i18next';
 
 import logo from '../assets/contactbanner.webp';
@@ -68,6 +69,15 @@ export default function Footer() {
               sx={{ color: '#E4405F' }}
             >
               <InstagramIcon />
+            </IconButton>
+              <IconButton
+              aria-label="Facebook"
+              href="https://www.facebook.com/people/Rojesafe-GmbH/61575049869606/"
+              target="_blank"
+              rel="noopener"
+              sx={{ color: '#296cfa' }}
+            >
+              <FacebookIcon />
             </IconButton>
           </Stack>
         </Box>
