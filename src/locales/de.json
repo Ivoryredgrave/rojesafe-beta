@@ -25,5 +25,9 @@
     "title": "Über uns",
     "subtext": "Mehr als ein Anbieter – wir sind Ihr Partner beim Schutz von Menschen und Eigentum.",
     "description": "RojeSafe wurde mit einem klaren Ziel gegründet: erstklassige Brandschutzlösungen mit menschlicher Note bereitzustellen. Unter der Leitung von Alejandro Jegher vereinen wir Fachwissen, Innovation und Sorgfalt, um Sicherheit in jeder Umgebung zu gewährleisten."
+  },
+    "cookie": {
+    "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Mit der weiteren Nutzung stimmen Sie der Verwendung von Cookies zu.",
+    "accept": "Akzeptieren"
   }
 }

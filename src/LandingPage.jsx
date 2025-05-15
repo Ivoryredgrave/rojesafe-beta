@@ -6,7 +6,7 @@ import LandingBanner from './components/LandingBanner';
 import Services from './components/Services';
 import AboutUS from './components/AboutUS';
 import Footer from './components/Footer';
-
+import ConsentNotice from './components/ConsentNotice';
 import Divider from '@mui/material/Divider';
 
 const theme = createTheme({
@@ -27,6 +27,7 @@ export default function LandingPage() {
         <Divider />
         <AboutUS />
         <Footer />
+        <ConsentNotice />
       </div>
 
     </ThemeProvider>
