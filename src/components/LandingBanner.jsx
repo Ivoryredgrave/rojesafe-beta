@@ -1,11 +1,14 @@
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import titleImg from '../assets/landingbanner.jpg';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import { useMediaQuery, useTheme } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import titleImg from '../assets/landingbanner.jpg';
 
 const StyledBox = styled('div')(({ theme }) => ({
-  width: '100%',          // cambiar de 100vw a 100%
+  width: '100%',
   height: '100%',
   borderRadius: 0,
   border: 'none',
@@ -25,12 +28,53 @@ const StyledBox = styled('div')(({ theme }) => ({
 
 export default function LandingBanner() {
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+if (isMobile) {
+  return (
+    <Box
+      id="home"
+      sx={{
+        marginTop: '94px',
+        width: '100%',
+        height: 'auto',
+        px: 2,
+        pt: 4,
+        pb: 4,
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+    >
+      <Card sx={{ width: '100%', borderRadius: 2 }}>
+        <CardMedia
+          component="img"
+          image={titleImg}
+          alt="Landing"
+          sx={{ height: 250, objectFit: 'cover' }}
+        />
+        <Typography
+          variant="h6"
+          sx={{
+            textAlign: 'center',
+            padding: 2,
+            fontWeight: 500,
+            color: '#212121',
+          }}
+        >
+          {t('landingBanner.subtitle')}
+        </Typography>
+      </Card>
+    </Box>
+  );
+}
+
   return (
     <Box
       id="home"
       sx={(theme) => ({
         marginTop: '94px',
-        width: '100%',              // cambia aquí también
+        width: '100%',
         height: 'calc(100vh - 94px)',
         display: 'flex',
         justifyContent: 'center',
@@ -40,7 +84,7 @@ export default function LandingBanner() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        overflowX: 'hidden',      // evita overflow horizontal
+        overflowX: 'hidden',
         ...(theme.applyStyles ? theme.applyStyles('dark', {
           backgroundImage:
             'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
@@ -60,7 +104,7 @@ export default function LandingBanner() {
             fontWeight: 500,
           }}
         >
-            {t('landingBanner.subtitle')}
+          {t('landingBanner.subtitle')}
         </Typography>
       </StyledBox>
     </Box>
