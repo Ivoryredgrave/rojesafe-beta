@@ -13,7 +13,8 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import Typography from '@mui/material/Typography';
 import { useTranslation } from 'react-i18next';
 import Switch from '@mui/material/Switch';
-
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
 import logo from '../assets/logo_rojesafe.png';
 
 const StyledToolbar = styled(Toolbar)(() => ({
@@ -47,128 +48,178 @@ export default function AppAppBar() {
   };
 
   return (
-    <AppBar
-      position="fixed"
-      elevation={1}
-      sx={{
-        bgcolor: '#212121',
-        backgroundImage: 'none',
-        boxShadow: 1,
-      }}
-    >
-      <Container maxWidth={false} disableGutters>
-        <StyledToolbar disableGutters>
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-            <Box
-              component="img"
-              src={logo}
-              alt="RojeSafe Logo"
-              sx={{ width: 28, height: 28 }}
-            />
-            <Typography variant="h6" sx={{ color: '#cc0018', fontWeight: 700 }}>
-              ROJESAFE
-            </Typography>
-          </Box>
+    <>
 
-          <Box
+      <AppBar
+        position="fixed"
+        elevation={0}
+        sx={{
+          bgcolor: '#212121',
+          height: 30,
+          justifyContent: 'center',
+        }}
+      >
+        <Container maxWidth={false} disableGutters>
+          <Toolbar
+            disableGutters
             sx={{
-              display: { xs: 'none', md: 'flex' },
-              flexGrow: 1,
-              justifyContent: 'center',
+              minHeight: '30px !important',
+              px: 2,
+              pr: 4,
+              display: 'flex',
+              justifyContent: 'flex-end',
               gap: 3,
             }}
           >
-            {navItems.map((item) => (
-              <Button
-                key={item.label}
-                href={item.href}
-                variant="text"
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+              <PhoneIcon sx={{ fontSize: 20, color: '#ffffff' }} />
+              <Typography variant="caption" sx={{ color: '#ffffff', fontSize: '1.0rem' }}>
+                079 718 5905
+              </Typography>
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 0.5 }}>
+              <EmailIcon sx={{ fontSize: 20, color: '#ffffff' }} />
+              <Typography variant="caption" sx={{ color: '#ffffff', fontSize: '1.0rem' }}>
+                rojesafe@hotmail.com
+              </Typography>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+
+      <AppBar
+        position="fixed"
+        elevation={1}
+        sx={{
+          bgcolor: '#212121',
+          backgroundImage: 'none',
+          boxShadow: 1,
+          top: 30,
+        }}
+      >
+        <Container maxWidth={false} disableGutters>
+          <StyledToolbar disableGutters>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.2, ml: 2 }}>
+              <Box
+                component="img"
+                src={logo}
+                alt="RojeSafe Logo"
+                sx={{ width: 38, height: 38 }}
+              />
+              <Typography
+                variant="h5"
                 sx={{
-                  color: '#FFFFFF',
-                  fontSize: '1rem',
-                  fontWeight: 500,
-                  px: 2,
-                  py: 1,
-                  textTransform: 'none',
-                  '&:hover': {
-                    color: '#e0e0e0',
+                  color: '#cc0018',
+                  fontWeight: 700,
+                  fontSize: '1.5rem',
+                  lineHeight: 1,
+                }}
+              >
+                ROJESAFE
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{
+                display: { xs: 'none', md: 'flex' },
+                flexGrow: 1,
+                justifyContent: 'center',
+                gap: 3,
+              }}
+            >
+              {navItems.map((item) => (
+                <Button
+                  key={item.label}
+                  href={item.href}
+                  variant="text"
+                  sx={{
+                    color: '#FFFFFF',
+                    fontSize: '1rem',
+                    fontWeight: 500,
+                    px: 2,
+                    py: 1,
+                    textTransform: 'none',
+                    '&:hover': {
+                      color: '#e0e0e0',
+                    },
+                  }}
+                >
+                  {t(item.label)}
+                </Button>
+              ))}
+            </Box>
+
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+              <Typography sx={{ color: 'white', fontWeight: 600 }}>
+                {i18n.language === 'de' ? 'DE' : 'EN'}
+              </Typography>
+              <Switch
+                checked={isChecked}
+                onChange={handleLanguageChange}
+                sx={{
+                  '& .MuiSwitch-switchBase.Mui-checked': {
+                    color: '#64b5f6',
+                  },
+                  '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
+                    backgroundColor: '#64b5f6',
+                  },
+                  '& .MuiSwitch-track': {
+                    backgroundColor: '#888',
+                  }
+                }}
+              />
+            </Box>
+
+
+            <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+              <IconButton aria-label="open drawer" onClick={toggleDrawer(true)} sx={{ color: '#FFFFFF' }}>
+                <MenuIcon />
+              </IconButton>
+              <Drawer
+                anchor="top"
+                open={open}
+                onClose={toggleDrawer(false)}
+                PaperProps={{
+                  sx: {
+                    backgroundColor: '#212121',
                   },
                 }}
               >
-                {t(item.label)}
-              </Button>
-            ))}
-          </Box>
-
-          <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <Typography sx={{ color: 'white', fontWeight: 600 }}>
-              {i18n.language === 'de' ? 'DE' : 'EN'}
-            </Typography>
-            <Switch
-              checked={isChecked}
-              onChange={handleLanguageChange}
-              sx={{
-                '& .MuiSwitch-switchBase.Mui-checked': {
-                  color: '#64b5f6',
-                },
-                '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-                  backgroundColor: '#64b5f6',
-                },
-                '& .MuiSwitch-track': {
-                  backgroundColor: '#888',
-                }
-              }}
-            />
-          </Box>
-
-
-          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <IconButton aria-label="open drawer" onClick={toggleDrawer(true)} sx={{ color: '#FFFFFF' }}>
-              <MenuIcon />
-            </IconButton>
-            <Drawer
-              anchor="top"
-              open={open}
-              onClose={toggleDrawer(false)}
-              PaperProps={{
-                sx: {
-                  backgroundColor: '#212121',
-                },
-              }}
-            >
-              <Box sx={{ p: 2 }}>
-                <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                  <IconButton onClick={toggleDrawer(false)} sx={{ color: '#FFFFFF' }}>
-                    <CloseRoundedIcon />
-                  </IconButton>
+                <Box sx={{ p: 2 }}>
+                  <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                    <IconButton onClick={toggleDrawer(false)} sx={{ color: '#FFFFFF' }}>
+                      <CloseRoundedIcon />
+                    </IconButton>
+                  </Box>
+                  {navItems.map((item) => (
+                    <MenuItem key={item.label} onClick={toggleDrawer(false)}>
+                      <Button
+                        href={item.href}
+                        fullWidth
+                        sx={{
+                          color: '#FFFFFF',
+                          fontSize: '1rem',
+                          textAlign: 'left',
+                          justifyContent: 'flex-start',
+                          textTransform: 'none',
+                          fontWeight: 500,
+                          py: 1,
+                          '&:hover': {
+                            color: '#e0e0e0',
+                          },
+                        }}
+                      >
+                        {t(item.label)}
+                      </Button>
+                    </MenuItem>
+                  ))}
                 </Box>
-                {navItems.map((item) => (
-                  <MenuItem key={item.label} onClick={toggleDrawer(false)}>
-                    <Button
-                      href={item.href}
-                      fullWidth
-                      sx={{
-                        color: '#FFFFFF',
-                        fontSize: '1rem',
-                        textAlign: 'left',
-                        justifyContent: 'flex-start',
-                        textTransform: 'none',
-                        fontWeight: 500,
-                        py: 1,
-                        '&:hover': {
-                          color: '#e0e0e0',
-                        },
-                      }}
-                    >
-                      {t(item.label)}
-                    </Button>
-                  </MenuItem>
-                ))}
-              </Box>
-            </Drawer>
-          </Box>
-        </StyledToolbar>
-      </Container>
-    </AppBar>
+              </Drawer>
+            </Box>
+          </StyledToolbar>
+        </Container>
+      </AppBar>
+
+    </>
   );
-}
+} 

@@ -8,6 +8,8 @@ import {
 } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import { useTranslation } from 'react-i18next';
 
 import logo from '../assets/contactbanner.webp';
@@ -60,25 +62,48 @@ export default function Footer() {
             {t('footer.followUs')}
           </Typography>
 
-          <Stack direction="row" spacing={2}>
-            <IconButton
-              aria-label="Instagram"
-              href="https://www.instagram.com/rojesafe_brandschutz/"
-              target="_blank"
-              rel="noopener"
-              sx={{ color: '#E4405F' }}
-            >
-              <InstagramIcon />
-            </IconButton>
+          {/* Redes sociales en 2x2 */}
+          <Stack direction="column" spacing={2}>
+            <Stack direction="row" spacing={2}>
               <IconButton
-              aria-label="Facebook"
-              href="https://www.facebook.com/people/Rojesafe-GmbH/61575049869606/"
-              target="_blank"
-              rel="noopener"
-              sx={{ color: '#296cfa' }}
-            >
-              <FacebookIcon />
-            </IconButton>
+                aria-label="Instagram"
+                href="https://www.instagram.com/rojesafe_brandschutz/"
+                target="_blank"
+                rel="noopener"
+                sx={{ color: '#E4405F' }}
+              >
+                <InstagramIcon fontSize="large" />
+              </IconButton>
+              <IconButton
+                aria-label="Facebook"
+                href="https://www.facebook.com/people/Rojesafe-GmbH/61575049869606/"
+                target="_blank"
+                rel="noopener"
+                sx={{ color: '#296cfa' }}
+              >
+                <FacebookIcon fontSize="large" />
+              </IconButton>
+            </Stack>
+            <Stack direction="row" spacing={2}>
+              <IconButton
+                aria-label="LinkedIn"
+                href="https://www.linkedin.com/company/rojesafe/"
+                target="_blank"
+                rel="noopener"
+                sx={{ color: '#0A66C2' }}
+              >
+                <LinkedInIcon fontSize="large" />
+              </IconButton>
+              <IconButton
+                aria-label="YouTube"
+                href="https://www.youtube.com/@rojesafe"
+                target="_blank"
+                rel="noopener"
+                sx={{ color: '#FF0000' }}
+              >
+                <YouTubeIcon fontSize="large" />
+              </IconButton>
+            </Stack>
           </Stack>
         </Box>
       </Container>

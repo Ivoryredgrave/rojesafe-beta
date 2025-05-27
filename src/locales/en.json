@@ -23,11 +23,14 @@
   },
   "aboutUs": {
     "title": "About Us",
-    "subtext": "More than a provider, we are your partner in protecting people and property.",
+    "subtext": "More than a provider, we are your dedicated partner committed to protecting lives, property, and the environment through innovative, reliable, and customized fire safety solutions. Our expertise and care ensure peace of mind for every client, delivering safety that goes beyond compliance and stands the test of time.",
     "description": "RojeSafe was founded with a clear mission: to provide top-tier fire protection solutions with a human touch. Under the leadership of Alejandro Jegher, we combine expertise, innovation, and care to ensure safety in every environment we serve."
   },
    "cookie": {
     "message": "We use cookies to improve your experience. By continuing, you agree to our use of cookies.",
     "accept": "Accept"
+  },
+   "landingBanner": {
+    "subtitle": "Protecting what matters most with cutting-edge fire safety expertise."
   }
 }

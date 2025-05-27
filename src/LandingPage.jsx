@@ -22,13 +22,13 @@ export default function LandingPage() {
       <AppAppBar />
       <LandingBanner />
 
-      <div>
+      <>
         <Services />
         <Divider />
         <AboutUS />
         <Footer />
         <ConsentNotice />
-      </div>
+      </>
 
     </ThemeProvider>
   );
