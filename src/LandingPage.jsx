@@ -8,6 +8,7 @@ import AboutUS from './components/AboutUS';
 import Footer from './components/Footer';
 import ConsentNotice from './components/ConsentNotice';
 import Divider from '@mui/material/Divider';
+import Gallery from './components/Gallery';
 
 const theme = createTheme({
   palette: {
@@ -24,6 +25,8 @@ export default function LandingPage() {
 
       <>
         <Services />
+        <Divider />
+        <Gallery />
         <Divider />
         <AboutUS />
         <Footer />

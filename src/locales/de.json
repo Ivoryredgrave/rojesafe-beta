@@ -26,11 +26,14 @@
     "subtext": "Mehr als nur ein Anbieter sind wir Ihr engagierter Partner, der sich dem Schutz von Leben, Eigentum und Umwelt durch innovative, zuverlässige und maßgeschneiderte Brandschutzlösungen verschrieben hat. Unser Fachwissen und unsere Sorgfalt garantieren jedem Kunden Sicherheit, die über die Einhaltung von Vorschriften hinausgeht und dauerhaft Bestand hat.",
     "description": "RojeSafe wurde mit einem klaren Ziel gegründet: erstklassige Brandschutzlösungen mit menschlicher Note bereitzustellen. Unter der Leitung von Alejandro Jegher vereinen wir Fachwissen, Innovation und Sorgfalt, um Sicherheit in jeder Umgebung zu gewährleisten."
   },
-    "cookie": {
+  "cookie": {
     "message": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Mit der weiteren Nutzung stimmen Sie der Verwendung von Cookies zu.",
     "accept": "Akzeptieren"
   },
-    "landingBanner": {
+  "landingBanner": {
     "subtitle": "Schützen, was am wichtigsten ist, mit modernster Brandschutzkompetenz."
+  },
+  "gallery": {
+    "title": "Brandschutzmanschette"
   }
 }
